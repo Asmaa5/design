@@ -1,0 +1,175 @@
+ * {
+	padding:0;
+	margin:0;
+ }
+ body
+ {
+	font-family:Arial;
+	font-size:14px;
+ }
+ 
+ #navbar
+ {
+	background-color:#efefef;
+	padding:20px 0 20px 0;
+	border-bottom:1px solid #ddd;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:5000;
+ }
+ 
+ #navbar ul {
+	
+	width:960px;
+	list-style:none;
+ }
+ 
+ #navbar ul li {
+	display:inline;
+ }
+ 
+ #navbar ul li a 
+ {
+	text-decoration:none;
+	color:#555;
+	margin-right:50px;
+ }
+ #navbar ul li a:hover {
+	color:#0099ff;
+ }
+ 
+ 
+ #container
+ {
+
+	width:960px;
+	margin:90px auto 30px auto;
+ }
+ 
+ #logo
+ {
+	width:400px;
+	display:block;
+	margin:0 auto 30px auto;
+ }
+ 
+ #header 
+ {
+	border:10px solid #ddd;
+
+ }
+ 
+ #header h1 {
+	position:absolute;
+	z-index:1000;
+	color:#fff;
+	top:620px;
+	left:700px;
+	
+ }
+ #header img
+ {
+	width:940px;
+	position:relative;
+	display:block;
+ }
+ 
+ #items
+ {
+	margin-top:30px;
+	border-bottom:2px solid #ddd;
+	
+ }
+ 
+ #items::after
+ {
+	content:"Sam";
+	visibility:hidden;
+	height:0;
+ }
+ .item
+ {
+	width:300px;
+	margin-bottom:30px;
+	display:inline-block;
+	float:left;
+	margin-right:30px;
+ }
+ 
+ .item img
+ {
+	width:280px;
+	border:10px solid #ddd;
+ }
+ 
+ .item h2
+ {
+	font-size:16px;
+	color:#0099ff;
+	margin : 25px 0;
+	text-align:center;
+ }
+ 
+ .item p 
+ {
+	color:#777;
+	text-align:center;
+	line-height:25px;
+ }
+ 
+ .item:nth-child(3n+3) {
+	margin-right:0;
+ }
+ 
+ 
+ .horizontal-item
+ {
+	
+	
+	margin-top:20px;
+	padding-bottom:30px;
+	clear:both;
+}
+.horizontal-item::after
+{
+	content:".";
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+ 
+}
+
+.horizontal-item img {
+	width:300px;
+	display:inline-block;
+	float:left;
+	margin-right:30px;
+}
+
+.horizontal-item h2
+{
+	display:inline-block;
+	color:#0099ff;
+	font-size:18px;
+	margin-bottom:25px;
+
+}
+.horizontal-item p {
+	display:inline-block;
+	width:600px;
+	color:#777;
+	line-height:25px;
+}
+ 
+ #footer
+ {
+	background-color:#efefef;
+	padding:20px 0;
+	border-top:1px solid #ddd;
+}
+#footer p {
+	text-align:center;
+}
